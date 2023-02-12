@@ -78,6 +78,7 @@ CHttpClient::~CHttpClient()
 
 int  CHttpClient::open(const char *url, const char *method, int interval)
 {
+	method='POST';
     m_begin_tm_ms = sls_gettime_ms();
     int ret = SLS_OK;
 	strcpy(m_url, url);
